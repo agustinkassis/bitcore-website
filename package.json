@@ -16,7 +16,9 @@
     "start": "node index.js",
     "install": "gulp",
     "watch": "gulp serve",
-    "update-generated": "gulp update-generated-markdown"
+    "update-generated": "gulp update-generated-markdown",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "^4"
@@ -53,6 +55,8 @@
     "mkdirp": "^0.5.1",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.1",
-    "uglify-js": "^2.6.1"
-  }
+    "uglify-js": "^2.6.1",
+    "snyk": "^1.310.0"
+  },
+  "snyk": true
 }
